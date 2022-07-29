@@ -29,13 +29,18 @@
 .key {
     width: 30%;
     flex-grow: 1;
-    border-radius: 100%;
 }
 
 .key:hover {
-    background-color: rgb(71, 72, 72);
+    color: rgb(71, 72, 72);
 }
 
 .key:active {
-    background-color: rgb(79, 1, 79);
+    color: rgb(79, 1, 79);
+}
+
+@keyframes grow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
 }
